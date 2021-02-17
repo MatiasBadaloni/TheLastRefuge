@@ -1,0 +1,4 @@
+- Que la persona que toca la puerta, pueda decir alguna que otra frace (cosas sencillas que se pueden repetir varias veces sin molestar). Y que sus golpes se repitan seguido, si no sera muy seco. Puede tener una pausa, pero solo eso antes de continuar golpeando.
+- Quizas no salvas sobrevivientes, sino maquinas que te traen libros o herramientas de reparacion del exterior (y si son libros, entonces se te desbloquearan mas articulos en tu biblioteca)
+- Y quizas puedes elegir tu cuando acabar el nivel (osea, que puedas tener todos los libros que desees. o mas bien, un limite de robots rescatados por nivel. Habria que pensar bien esto)
+- 
