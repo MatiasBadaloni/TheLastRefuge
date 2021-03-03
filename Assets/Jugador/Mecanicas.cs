@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Mecanicas : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Mecanicas : MonoBehaviour
     public GameObject pausar;
     public GameObject pausar1;
     public GameObject pausar2;
+    public SpriteRenderer fondo;
+    public SpriteRenderer imagen1;
+    public SpriteRenderer imagen2;
+    
     private void Update()
     {
         if (Input.GetKey("s"))
@@ -61,7 +66,7 @@ public class Mecanicas : MonoBehaviour
             {
                 if (abierto == false)
                 {
-                    //Debug.Log("Abierto");
+                    fondo.sprite = imagen2.sprite;
                     puerta.SetBool("Abrir", true);
                     abierto = true;
                     if (buscador.atacar == true)
@@ -89,6 +94,7 @@ public class Mecanicas : MonoBehaviour
             {
                 if (abierto == true)
                 {
+                    fondo.sprite = imagen1.sprite;
                     puerta.SetBool("Abrir", false);
                     abierto = false;
                     pausar.SetActive(true);
