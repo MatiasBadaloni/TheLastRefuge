@@ -1,0 +1,23 @@
+Puerta:
+- Ver animacion y efecto al crearse la sombra (quizas que sea mas lento todo y que no puedar tocar el boton el el proceso)
+- Corregir mala codificacion tanto de la puerta como de la interfaz de la puerta (incluso si debes corregir a nivel general la interfaz)
+
+Sobreviviente:
+- Ver si su animacion queda bien incluso cuando se cierra la puerta antes de acabarla.
+
+Interfaz:
+- Ver mensaje de ganador al conseguir todos los supervivientes (fijarme si hace falta un mensaje como tal, pero que se necesita una cantidad necesaria para pasar de nivel si; solo que una vez conseguida que auizas puedas seguir jugando tal cual estas haciendolo y sigas de nivel cuando desees)
+- Sacar numero de supervivientes salvados y ver si poner alguna interfaz que les represente (o quizas no)
+- Pulir mecanicas y demas cosas raras que tiene (o no, si es para una demo, no)
+- Mejor el tema de las luces (que parpadee segun se le indique)
+
+General:
+- Ver y corregi detalles en mecanicas y animacion
+
+
+Luego de pulir lo anterior:
+Interfaz:
+-Boton de salir (esto posiblemente requiera debate por todo lo que le quiero implementar, sobre la cama y demas cosas), verse luego de terminar todo lo anterior.
+
+General:
+- Ver lista de ideas

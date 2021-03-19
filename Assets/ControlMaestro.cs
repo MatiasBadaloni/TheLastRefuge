@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class ControlMaestro : MonoBehaviour
 {
-    private bool activar;
-    public int puntosNecesarios;
+    [Header("Objetos")]
     public GameObject ganar;
     public GameObject perder;
     public Mecanicas player;
@@ -15,7 +14,12 @@ public class ControlMaestro : MonoBehaviour
     public Buscador buscador;
     public Puerta puerta;
     public Text puntaje;
-    public GameObject pausar;
+    public GameObject libros;
+
+    [Header("Opciones")]
+    private bool activar;
+    public int puntosNecesarios;
+
     private void Start()
     {
         Activar();
@@ -28,7 +32,6 @@ public class ControlMaestro : MonoBehaviour
         sobreviviente.Activar();
         buscador.Activar();
         puerta.Activar();
-        pausar.SetActive(true);
     }
     private void Deactivar()
     {
@@ -37,8 +40,6 @@ public class ControlMaestro : MonoBehaviour
         controlEventos.Desactivar();
         sobreviviente.Desactivar();
         buscador.Desactivar();
-        puerta.Desactivar();
-        pausar.SetActive(false);
     }
     public void Reiniciar()
     {
@@ -50,6 +51,7 @@ public class ControlMaestro : MonoBehaviour
         ganar.gameObject.SetActive(false);
         perder.gameObject.SetActive(false);
         Activar();
+        libros.gameObject.SetActive(false);
     }
     public void Ganar(int sobrevivientes)
     {

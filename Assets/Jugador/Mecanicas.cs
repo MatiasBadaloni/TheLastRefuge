@@ -5,22 +5,27 @@ using UnityEngine.UI;
 
 public class Mecanicas : MonoBehaviour
 {
+    [Header("Objetos")]
+    public ControlEventos controlEventos;
+    public ControlMaestro controlMaestro;
+    public Sobreviviente sobreviviente;
+    public Buscador buscador;
+    public Animator puerta;
+    public GameObject puertaBoton1;
+    public GameObject puertaBoton2;
+    public GameObject alarmaBoton1;
+    public GameObject alarmaBoton2;
+    public SpriteRenderer fondo;
+    public SpriteRenderer imagen1;
+    public SpriteRenderer imagen2;
+
+    [Header("Opciones")]
     public int sobreviSalvados;
     private bool activar;
     public bool abierto;
     public bool muerto;
     private bool ganar;
-    public ControlEventos controlEventos;
-    public Sobreviviente sobreviviente;
-    public Buscador buscador;
-    public Animator puerta;
-    public ControlMaestro controlMaestro;
-    public GameObject pausar;
-    public GameObject pausar1;
-    public GameObject pausar2;
-    public SpriteRenderer fondo;
-    public SpriteRenderer imagen1;
-    public SpriteRenderer imagen2;
+  
     
     private void Update()
     {
@@ -50,11 +55,14 @@ public class Mecanicas : MonoBehaviour
     }
     public void Reiniciar()
     {
+        puertaBoton1.SetActive(true);
+        puertaBoton2.SetActive(false);
         sobreviSalvados = 0;
         muerto = false;
         ganar = false;
         abierto = false;
         puerta.SetBool("Abrir", false);
+        fondo.sprite = imagen1.sprite;
         Activar();
     }
 
@@ -78,9 +86,8 @@ public class Mecanicas : MonoBehaviour
                         sobreviviente.Rogar();
                     }
                     controlEventos.Activar();
-                    pausar.SetActive(false);
-                    pausar1.SetActive(true);
-                    pausar2.SetActive(false);
+                    alarmaBoton1.SetActive(true);
+                    alarmaBoton2.SetActive(false);
                 }
             }
         }
@@ -97,7 +104,8 @@ public class Mecanicas : MonoBehaviour
                     fondo.sprite = imagen1.sprite;
                     puerta.SetBool("Abrir", false);
                     abierto = false;
-                    pausar.SetActive(true);
+                    alarmaBoton1.SetActive(true);
+                    alarmaBoton2.SetActive(false);
                 }
             }
         }
